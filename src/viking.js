@@ -225,6 +225,27 @@ class War {
         return result;
     }
 
+    // Since there is a lot of repetitive code in the previous two iterations,
+    // methods vikingAttack() and saxonAttack(), try to create one generic method
+    // and call it in the case of vikingAttack and in the case of saxonAttack
+    // instead of using almost the same code for both methods. (This iteration
+    //     doesn't have the test, so ask your TAs and your instructor to give you
+    //     feedback on the quality of your code after the refactor.)
+
+    // showStatus() method
+    // Returns the current status of the War based on the size of the armies.
+    
+    // should be a function
+    // should receive 0 arguments
+    // if the Saxon array is empty, should return "Vikings have won the war
+    // of the century!"
+    
+    // if the Viking array is empty, should return "Saxons have fought for their
+    // lives and survived another day..."
+    
+    // if there are at least 1 Viking and 1 Saxon, should return "Vikings and Saxons
+    // are still in the thick of battle."
+
     showStatus() {
         if (this.saxonArmy.length === 0) {
             console.log("Vikings have won the war of the century!");
